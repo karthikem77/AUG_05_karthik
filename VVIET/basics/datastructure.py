@@ -34,7 +34,7 @@ print(c[0:4:2]) #slicing operator
 print(c[::-1])
 '''
  
-#1. list is mutable(we cant store fixed objects in list)
+#1. list is mutable(we can't store fixed objects in list)
 
 '''
 a=[1,2,3,4,"abc"]
@@ -56,7 +56,7 @@ print(a)
 print(len(a))
 print(a.count(1))
 '''
-#1.count the accrance of each element in given list
+#1.count the occurance of each element in given list
 '''
 a=[1,2,3,4,"abc",1,2]
 b=[]
@@ -87,6 +87,7 @@ weekdays=["mon","tue",""]
 d=a.copy()
 print(d)
 '''
+'''
 a=[1,2,3,4,"abc",1,2]
 b=[]
 c=list(range(6))
@@ -94,3 +95,14 @@ weekdays=["mon","tue",""]
 a.extend(c)
 print(a)
 print(a[11])
+'''
+a=[1,10,20,30,40,50]
+b=[]
+for x in a:
+    if x%2 == 0:
+        b.append(x)
+print("normal method:",b)
+'''list comprehension'''
+b=[x for x in a if x%2 == 0]
+print("list comprehension:",b)
+        
